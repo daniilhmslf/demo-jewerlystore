@@ -1,0 +1,44 @@
+.formWidth{width: 75%; max-width: 900px; margin: auto;}
+
+#contactForm{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#contactForm input{
+	display: inline-block;
+	width: 100%;
+	padding: 10px;
+	border: 2px #247c74 solid;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	}
+
+	#contactForm span{
+		display: inline-block;
+	}
+
+	#contactForm input[type="radio"]{
+		width: auto;
+	}
+
+	#contactForm input[type="submit"]{
+		width: 49%;
+		background-color: #247c74;
+		color: white;
+		font-size: 1.2em;
+	}
+
+	#contactForm input[type="reset"]{
+		width: 49%;
+		background-color: #247c74;
+		color: white;
+		font-size: 1.2em;
+	}
+
+	#contactForm textarea{
+		display: block;
+		width: 100%;
+		height: 185px;
+		border: 2px #247c74 solid;
+	}

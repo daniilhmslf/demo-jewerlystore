@@ -1,0 +1,41 @@
+.grid{margin-bottom: 20px;}
+.grid-item{
+	width: 290px;
+	max-height: 500px;
+	margin-top: 20px;
+	background: white;
+	padding: 10px;
+	box-shadow: 6px 6px 6px #ddd;
+	overflow: hidden;
+	height: 450px;
+	position: relative;
+	}
+	.grid-item img{
+		display: block;
+		max-width: 100%;
+		margin: auto;
+	}
+	.grid-item .mdseItemTextWrapper{
+
+	}
+		.grid-item h3{
+			font-family: 'Josefin Slab';
+			font-size: 1.4em;
+			line-height: 1.4em;
+			margin: 0px;
+			text-align: center;
+		}
+		.grid-item p{
+			font-size: 0.9em;
+			color: #888;
+			text-align: center;
+			margin: 0;
+		}
+		.grid-item a{
+			display: block;
+			text-decoration: none;
+			color: #888;
+			text-align: center;
+			width: 100%;
+			margin-top: 15%;
+		}

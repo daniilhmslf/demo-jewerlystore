@@ -1,0 +1,242 @@
+/*---------------------------------------HELPER CLASSES---------------------------------------*/
+.fullWidth{width: 100%;}
+
+.siteWidth{width: 90%; max-width: 1200px; margin: auto;}
+
+.clearfix:after{content: ""; display: table; clear: both;}
+/*--------------------------------------------------------------------------------------------*/
+
+/*complementary to #247c74: #eda5a6*/
+
+*{box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
+
+body{background: #eee; font-family: 'roboto', monospace; margin: 0; padding: 0;}
+
+::selection {
+    background: #92b2af;
+    text-shadow: none;
+}
+
+
+/*-------------------------------------------header-------------------------------------------*/
+
+#firstHeader{overflow: hidden; background: #247c74;	color: white; height: 40px}
+
+	#firstHeader span, i{
+		float: left;
+		display: inline-block;
+		padding: 8px 10px;
+		text-align: center;
+		line-height: 24px;
+	}
+	#firstHeader input{
+		color: black;
+		float: right;
+		height: 20px;
+		margin: 5px 0px;
+		border-radius: 8px;
+		/*background: url(img/search.png) no-repeat scroll 3px 3px;*/
+	}
+	#firstHeader a{
+		float: right;
+		display: inline-block;
+		padding: 8px 10px;
+		text-align: center;
+		line-height: 24px;
+		text-decoration: none;
+		color: white;
+	}
+
+#mainHeader{height: 150px;	background: #ddd; position: relative;}
+
+	#mainHeader .botonHeader{
+		float: right;
+		display: inline-block;
+		padding: 5px 10px;
+		text-align: center;
+		line-height: 130px;
+		text-decoration: none;
+		color: #666;
+		font-size: 0.8em;
+		display: none;
+	}
+
+	#logo{
+		max-height: 95%;
+		height: auto;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+	}
+/*-------------------------------------------navbar-------------------------------------------*/
+#mobileHeader{ display: none; }
+#navBar{overflow: hidden;	background: #dddddd;	border-bottom: 2px #247c74 solid;}
+#navBarInner{position: relative; display: inline-block;}
+	
+	#navBar ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		}
+		#navBar ul li{
+			float: left;
+			width: 20%;
+			font-size: 1em;
+			}
+			#navBar ul li a{
+				display: block;
+			/*	width: 240px;*/
+				text-align: center;
+				padding: 10px 0px;
+				text-decoration: none;
+				color: #161616;
+				transition: 0.12s;
+			}
+			/*ul li a:hover{
+				background: #efefef;
+			}*/
+			#subMenu1,
+			#subMenu2,
+			#subMenu3,
+			#subMenu4,
+			#subMenu5{
+				transition: 0s;
+				transition-delay: 0.27s;   
+				height: 0px;			
+				position: absolute;
+				background: #dddddd;
+				z-index: 1;
+				box-shadow: 0px -2px 1px #247c74 inset;
+				overflow: hidden;
+			}
+			.submenuWrapper{
+				padding: 20px;
+				}
+				.submenuWrapper h2{ font-family: 'Josefin Slab', serif; }
+				.submenuWrapper a{ text-decoration: none; color: #247c74; }
+				.submenuWrapper .subCatContainer{
+					float: left;
+					margin-right: 20px;
+					width: 230px;
+					height: 100%;
+					padding: 0px;
+					}
+					.submenuWrapper .subCatContainer ul{
+						margin: 0;
+						padding: 0;
+						list-style-type: none;
+						}
+						.submenuWrapper .subCatContainer ul li a{
+							text-align: left;
+							font-size: 1.3em;
+							line-height: 1em;
+							color: #247c74;
+						}
+			#btn1,
+			#btn2,
+			#btn3,
+			#btn4,
+			#btn5{
+				transition: 0s;
+				transition-delay: 0.27s;
+				font-family: 'Josefin Slab', serif;
+				font-size: 1.2em;
+			}
+/*-------------------------------------------/navbar-------------------------------------------*/
+/*-------------------------------------------/header-------------------------------------------*/
+#contentWrapper{
+	margin-bottom: 60px;
+}
+	#contentWrapper .fullWidthPromo{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	#contentWrapper .halfWidthPromoL{
+		width: 49%;
+		float: left;
+		}
+	#contentWrapper .halfWidthPromoR{
+		width: 49%;
+		float: right;
+		}
+		#contentWrapper .fullWidthPromo img,
+		#contentWrapper .halfWidthPromoL img,
+		#contentWrapper .halfWidthPromoR img{
+			max-width: 100%;
+			max-height: 100%;
+			overflow: hidden;
+		}
+
+
+
+/*-------------------------------------------footer-------------------------------------------*/
+#preFooter{
+	background: #555;
+	padding-top: 5px;
+	overflow: hidden;
+	padding-bottom: 80px;
+	}
+	#preFooter h2{	text-align: center; font-size: 2.4em; color: white; font-family: 'Josefin Slab', serif}
+	#preFooter a img{
+		display: inline-block;
+		height: auto;
+		width: 15%;
+		margin: 0 2.13% 0 2.13%;
+		border: 5px solid #247c74;
+		filter: opacity(80%);
+		transition: 0.3s ease;
+
+	}
+	#preFooter a img:hover{
+		filter: opacity(100%);
+	}
+#footer{
+	background: #247c74;
+	height: 80px;
+	color: white;
+	padding: 30px 0px;
+}
+/*-------------------------------------------/footer-------------------------------------------*/
+/*-------------------------------------------@Queries-------------------------------------------*/
+@media only screen and (max-width: 700px) { #navBar ul li{ font-size: 0.8em; } }
+@media only screen and (max-width: 500px) {
+	
+	.siteWidth{
+		width: 88%;
+		margin: auto;
+	}
+
+	.sliderWrapper{
+		display: none;
+	}
+
+	#preFooter{
+		display: none;
+	}
+
+	#navBar{
+		display: block;
+	}
+
+	
+	#logo{ display: block; width: 300px; margin: auto; }
+
+	#contentWrapper .fullWidthPromo{
+		display: none;
+	}
+
+	#contentWrapper .halfWidthPromoL{
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		float: none;
+		}
+
+	#contentWrapper .halfWidthPromoR{
+		width: 100%;
+		margin-bottom: 20px;
+		float: none;
+		}
+}
